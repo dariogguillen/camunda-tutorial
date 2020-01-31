@@ -1,0 +1,12 @@
+{
+  "name": "camunda-tutorial",
+  "version": "1.0.0",
+  "description": "camunda exercise",
+  "main": "index.js",
+  "repository": "git@github.com:dariogguillen/camunda-tutorial.git",
+  "author": "dariogguillen <guillendario@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "camunda-external-task-client-js": "^1.3.0"
+  }
+}
