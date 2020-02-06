@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" id="Definitions_0y04eui" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="3.5.0">
+  <decision id="approve-payment" name="Approve Payment">
+    <decisionTable id="decisionTable_1">
+      <input id="InputClause_07zy0ua" label="Item">
+        <inputExpression id="LiteralExpression_0zazgmh" typeRef="string">
+          <text>item</text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="approved" name="Approved" typeRef="boolean" />
+      <rule id="DecisionRule_0gh06gt">
+        <inputEntry id="UnaryTests_0dur645">
+          <text>"item 1"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1xcp1zd">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0uxi3wj">
+        <inputEntry id="UnaryTests_04a5bgf">
+          <text>not("item 1")</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0dcrulj">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
